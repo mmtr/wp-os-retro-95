@@ -2,6 +2,8 @@
 
 A desktop theme for [OpenStation](https://github.com/WordPress/openstation) that turns WordPress into a mid-nineties desktop: grey bevels, navy title bars, a teal desk, and a taskbar with a Start menu.
 
+**Try it live: https://wp-os-retro-95.space.fast**. WordPress runs in your browser, with nothing to install.
+
 ![Retro 95: a Dashboard window with a navy title bar on a teal desk, and the taskbar along the bottom](screenshots/desktop.png)
 
 ## Download
