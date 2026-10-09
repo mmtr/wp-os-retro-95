@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>OS Retro Sans specimen</title>
+<style>
+@font-face {
+	font-family: 'OS Retro Sans';
+	src: url('../fonts/os-retro-sans.woff') format('woff');
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'OS Retro Sans';
+	src: url('../fonts/os-retro-sans-bold.woff') format('woff');
+	font-weight: 700;
+}
+
+/*
+ * The fonts are crisp at their designed size and whole multiples of it,
+ * when text starts on a whole CSS pixel. On macOS, the default font
+ * smoothing dilates every glyph by a fraction of a pixel; plain
+ * antialiasing draws these pixel-aligned outlines exactly.
+ */
+body {
+	margin: 0;
+	padding: 16px 24px;
+	background: #fff;
+	color: #000;
+	-webkit-font-smoothing: antialiased;
+	font-synthesis: none;
+}
+h1 {
+	margin: 0 0 16px;
+	font: 700 22px/26px 'OS Retro Sans';
+}
+section {
+	margin: 0 0 20px;
+}
+.label {
+	margin: 0 0 6px;
+	padding: 0 0 2px;
+	border-bottom: 1px solid #000;
+	font: 400 11px/13px 'OS Retro Sans';
+}
+.sample {
+	line-height: normal;
+	white-space: nowrap;
+}
+.wrap {
+	white-space: normal;
+	overflow-wrap: anywhere;
+}
+.gap {
+	height: 6px;
+}
+.sans { font-family: 'OS Retro Sans'; font-weight: 400; }
+.sans-bold { font-family: 'OS Retro Sans'; font-weight: 700; }
+
+/* Period UI, to see the faces where they belong. */
+.mock {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+	align-items: flex-start;
+}
+.win {
+	width: 260px;
+	border: 2px solid;
+	border-color: #dfdfdf #000 #000 #dfdfdf;
+	background: #c0c0c0;
+	padding: 2px;
+}
+.win-title {
+	padding: 3px 4px 2px;
+	background: #000080;
+	color: #fff;
+	font: 700 11px/13px 'OS Retro Sans';
+}
+.win-body {
+	padding: 8px 6px;
+	font: 400 11px/13px 'OS Retro Sans';
+}
+.start {
+	display: inline-block;
+	padding: 3px 6px 2px;
+	border: 2px solid;
+	border-color: #fff #000 #000 #fff;
+	background: #c0c0c0;
+	font: 700 11px/13px 'OS Retro Sans';
+}
+</style>
+</head>
+<body>
+<h1>OS Retro Sans</h1>
+
+<section data-font="OS Retro Sans" data-weight="400" data-size="11">
+	<div class="label"></div>
+	<div class="sans">
+		<div class="sample" style="font-size: 11px">The quick brown fox jumps over the lazy dog 0123456789</div>
+		<div class="sample" style="font-size: 11px">!"#$%&amp;'()*+,-./:;&lt;=&gt;?@ ABCDEFGHIJKLMNOPQRSTUVWXYZ [\]^_` abcdefghijklmnopqrstuvwxyz {|}~</div>
+		<div class="sample" style="font-size: 11px">¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞß àáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ Œœ€™ “”‘’„ ‹›«» •…–— ←↑→↓</div>
+		<div class="sample" style="font-size: 11px">File  Edit  View  Special · My Computer · Recycle Bin · Start · Posts · Untitled - Notepad · Welcome to OpenStation</div>
+		<div class="gap"></div>
+		<div class="sample" style="font-size: 22px">The quick brown fox jumps over the lazy dog 0123456789</div>
+		<div class="sample" style="font-size: 22px">My Computer · Recycle Bin · Start · Posts · Untitled - Notepad</div>
+		<div class="sample" style="font-size: 33px">Welcome to OpenStation · Configuración · Größe</div>
+	</div>
+</section>
+
+<section data-font="OS Retro Sans" data-weight="700" data-size="11">
+	<div class="label"></div>
+	<div class="sans-bold">
+		<div class="sample" style="font-size: 11px">The quick brown fox jumps over the lazy dog 0123456789</div>
+		<div class="sample" style="font-size: 11px">!"#$%&amp;'()*+,-./:;&lt;=&gt;?@ ABCDEFGHIJKLMNOPQRSTUVWXYZ [\]^_` abcdefghijklmnopqrstuvwxyz {|}~</div>
+		<div class="sample" style="font-size: 11px">ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÑÒÓÔÕÖØÙÚÛÜÝß àáâãäåæçèéêëìíîïñòóôõöøùúûüýÿ “quotes” ‘single’ – — … © ×→</div>
+		<div class="sample" style="font-size: 11px">My Computer · Recycle Bin · Start · Posts · Untitled - Notepad · Welcome to OpenStation</div>
+		<div class="gap"></div>
+		<div class="sample" style="font-size: 22px">The quick brown fox jumps over the lazy dog 0123456789</div>
+		<div class="sample" style="font-size: 22px">My Computer · Recycle Bin · Start · Untitled - Notepad</div>
+		<div class="sample" style="font-size: 33px">Welcome to OpenStation · Start</div>
+	</div>
+</section>
+
+<section class="mock">
+	<div class="win">
+		<div class="win-title">Untitled - Notepad</div>
+		<div class="win-body">Welcome to OpenStation.<br>My Computer, Recycle Bin, Posts.</div>
+		<span class="start">Start</span>
+	</div>
+</section>
+
+<script>
+// Fill each label with what the browser actually measured, so a wrong
+// metric or a font that failed to load shows up in the screenshot.
+document.fonts.ready.then( () => {
+	const canvas = document.createElement( 'canvas' ).getContext( '2d' );
+	for ( const section of document.querySelectorAll( 'section[data-font]' ) ) {
+		const { font, weight, size } = section.dataset;
+		const shorthand = `${ weight } ${ size }px '${ font }'`;
+		const probe = document.createElement( 'div' );
+		probe.style.cssText = `font: ${ shorthand }; line-height: normal; position: absolute; visibility: hidden;`;
+		probe.textContent = 'Hg';
+		document.body.appendChild( probe );
+		const lineHeight = probe.getBoundingClientRect().height;
+		probe.remove();
+		canvas.font = shorthand;
+		const m = canvas.measureText( 'H' );
+		const loaded = document.fonts.check( shorthand );
+		section.querySelector( '.label' ).textContent =
+			`${ font } ${ weight === '700' ? 'Bold' : 'Regular' } · font-size ${ size }px (also 2x, 3x) · ` +
+			`line-height normal ${ lineHeight }px · ascent ${ m.fontBoundingBoxAscent }px · descent ${ m.fontBoundingBoxDescent }px` +
+			( loaded ? '' : ' · NOT LOADED' );
+	}
+} );
+</script>
+</body>
+</html>
