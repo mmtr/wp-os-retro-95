@@ -4,14 +4,19 @@ A desktop theme for [OpenStation](https://github.com/WordPress/openstation) that
 
 ![Retro 95: a Dashboard window with a navy title bar on a teal desk, and the taskbar along the bottom](screenshots/desktop.png)
 
+## Download
+
+[Download Retro 95](https://github.com/mmtr/wp-os-retro-95/archive/refs/heads/main.zip) as a ZIP, or click **Code > Download ZIP** at the top of this page. The ZIP is the theme, ready to upload, with nothing to build.
+
+Keep it zipped. If your browser unzips downloads (Safari does by default), compress the folder again before you upload it.
+
 ## Install
 
 Needs an OpenStation version newer than 1.1.12.
 
-1. Download this repository as a ZIP: **Code > Download ZIP**.
-2. In WordPress, open OpenStation and go to **Preferences > Themes**.
-3. Drop the ZIP on the upload box.
-4. Pick **Retro 95**, then click **Apply Retro 95's recommended layout and effects**. That switches the dock to the taskbar, puts the teal desk behind it, and clears Mio and the widgets off the desk.
+1. In WordPress, open OpenStation and go to **Preferences > Themes**.
+2. Drop the ZIP on the upload box, or click it and choose the ZIP.
+3. Pick **Retro 95**, then click **Apply Retro 95's recommended layout and effects**. That switches the dock to the taskbar, puts the teal desk behind it, and clears Mio and the widgets off the desk.
 
 ## What's in it
 
