@@ -15,6 +15,10 @@ const PRESSED = 'inset -1px -1px #ffffff, inset 1px 1px #000000, inset -2px -2px
 const WINDOW = 'inset -1px -1px #000000, inset 1px 1px #dfdfdf, inset -2px -2px #808080, inset 2px 2px #ffffff';
 const SUNKEN = 'inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #000000';
 const SHALLOW = 'inset -1px -1px #ffffff, inset 1px 1px #808080';
+// A tab is a key with no bottom edge: lit top and left, shaded right.
+const TAB = 'inset -1px 0 #000000, inset -2px 0 #808080, inset 1px 1px #ffffff';
+// The panel's top edge, which the tabs stand on: white, then light grey.
+const FLOOR = 'linear-gradient( #ffffff, #ffffff ), linear-gradient( #dfdfdf, #dfdfdf )';
 
 export default {
 	manifest: {
@@ -130,6 +134,51 @@ export default {
 		'--os-tabs-active-color': '#000000',
 		'--os-tabs-active-color-muted': '#000000',
 		'--os-tabs-rail-opacity': '0',
+		// Each tab its own key, the active one taller and wider, joined
+		// to the panel below.
+		'--os-tabs-plate-display': 'none',
+		'--os-tabs-padding': '6px 6px 0',
+		'--os-tabs-gap': '0px',
+		'--os-tabs-radius': '3px',
+		'--os-tabs-tab-height': '20px',
+		'--os-tabs-tab-padding': '0 8px',
+		'--os-tabs-tab-margin': '0 0 2px',
+		'--os-tabs-font-size': '11px',
+		'--os-tabs-tab-bg': FACE,
+		'--os-tabs-tab-shadow': TAB,
+		'--os-tabs-hover-color': '#000000',
+		'--os-tabs-hover-bg': FACE,
+		'--os-tabs-active-tab-bg': FACE,
+		'--os-tabs-active-shadow': TAB,
+		'--os-tabs-active-height': '24px',
+		'--os-tabs-active-margin': '0 -2px',
+		'--os-tabs-active-weight': '400',
+		'--os-tabs-image': FLOOR,
+		'--os-tabs-image-size': '100% 1px, 100% 1px',
+		'--os-tabs-image-position': '0 calc( 100% - 1px ), 0 100%',
+		'--os-tabs-image-repeat': 'no-repeat',
+		// The panel the tabs stand on, and the page sunk into it.
+		'--os-tabs-panel-padding': '4px 6px 6px',
+		'--os-tabs-panel-shadow': 'inset 1px 0 #ffffff, inset 2px 0 #dfdfdf, inset -1px -1px #000000, inset -2px -2px #808080',
+		'--os-tabs-page-shadow': '-1px -1px 0 #000000, 1px 1px 0 #dfdfdf, -2px -2px 0 #808080, 2px 2px 0 #ffffff',
+		// The same keys for the tab strips inside native windows.
+		'--os-ui-tabs-gap': '0px',
+		'--os-ui-tabs-bg': FACE,
+		'--os-ui-tabs-padding': '4px 6px 0',
+		'--os-ui-tabs-margin': '0',
+		'--os-ui-tabs-floor': '1px solid #ffffff',
+		'--os-ui-tab-padding': '3px 8px',
+		'--os-ui-tab-margin': '2px 0 0',
+		'--os-ui-tab-corners': '3px 3px 0 0',
+		'--os-ui-tab-font-size': '11px',
+		'--os-ui-tab-bg': FACE,
+		'--os-ui-tab-shadow': TAB,
+		'--os-ui-tab-selected-bg': FACE,
+		'--os-ui-tab-selected-shadow': TAB,
+		'--os-ui-tab-selected-margin': '0 -2px -1px',
+		'--os-ui-tab-selected-padding': '3px 8px 6px',
+		'--os-ui-tab-selected-weight': '400',
+		'--os-ui-tab-indicator-display': 'none',
 
 		// --- Taskbar ---
 		'--os-dock-bg': FACE,
